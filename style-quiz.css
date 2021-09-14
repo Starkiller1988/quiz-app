@@ -1,11 +1,79 @@
-.title{
+h1{
     border-style: solid;
-    font-size: 30px;
+    font-size: 40px;
     border-radius: 10px;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: lightsalmon;
+    color: black;
     height: 60px;
-    padding-top: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+footer{
+background-color: lightsalmon;
+border-radius: 10px;
+text-align: center;
+padding-bottom: 10px;
+position: fixed;
+bottom: 0;
+width: 100vw;
 }
 
+.home{
+    width: 60px;
+}
+
+.bookmark{
+    width: 60px;
+}
+
+.addquestion{
+    width: 60px;
+}
+
+.profile{
+    width: 60px;
+}
+
+#btn{
+    margin-inline: 10px;
+    border-radius: 10px;
+    
+}
+
+.questcard-container{
+    padding: 0 100px
+}
+
+.questcard{
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 22px;
+background-color: lightsalmon;
+text-align: center;
+}
+
+.questcard button{
+    font-size: 25px;
+    flex: 0 0 4rem;
+    margin: 2% 10%;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+main{
+    margin: 100px 0;
+}
