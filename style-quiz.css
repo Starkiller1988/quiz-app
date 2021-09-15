@@ -1,16 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+:root{
+    --text-clr:black;
+    --main-clr: lightsalmon;
+    --bg-clr: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-clr:white;
+        --main-clr: lightsalmon;
+        --bg-clr: black;
+    }
+}
+
 h1{
     border-style: solid;
-    font-size: 40px;
+    font-size: 45px;
     border-radius: 10px;
     text-align: center;
-    background-color: lightsalmon;
-    color: black;
+    background-color: var(--main-clr);
+    color:var(--text-clr);
     height: 60px;
     padding-top: 10px;
     font-weight: bold;
+    font-family: zen dots;
+    
 }
 footer{
-background-color: lightsalmon;
+background-color: var(--main-clr);
 border-radius: 10px;
 text-align: center;
 padding-bottom: 10px;
@@ -19,52 +36,49 @@ bottom: 0;
 width: 100vw;
 }
 
-.home{
+.home, .bookmark, .addquestion, .profile{
     width: 60px;
 }
 
-.bookmark{
-    width: 60px;
-}
 
-.addquestion{
-    width: 60px;
-}
-
-.profile{
-    width: 60px;
-}
-
-#btn{
+#homebtn, #bookbtn, #questbtn, #profbtn{
     margin-inline: 10px;
     border-radius: 10px;
     
 }
 
 .questcard-container{
-    padding: 0 100px
+    padding: 0 20px
 }
 
 .questcard{
-    border: 2px solid black;
+    border: 2px solid var(--text-clr);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     font-weight: bold;
     font-size: 22px;
-background-color: lightsalmon;
+background-color: var(--main-clr);
 text-align: center;
+font-family: zen dots;
+color: var(--text-clr);
 }
 
 .questcard button{
+    background-color:var(--main-clr-);
     font-size: 25px;
     flex: 0 0 4rem;
     margin: 2% 10%;
+    font-family: zen dots;
+    color: var(--main-clr-);
 }
 
 body{
     margin: 0;
+    padding: 0;
     width: 100vw;
+    background-color:var(--bg-clr);
+
 }
 
 header{
@@ -76,4 +90,31 @@ header{
 
 main{
     margin: 100px 0;
+}
+
+.bookm {
+    position: absolute;
+    margin-top: 16px;
+}
+
+.bbtn{
+    width: 50px;
+}
+
+input[type="checkbox"] {
+-webkit-appearance: none;
+visibility: hidden;
+display: none;
+}
+
+.check{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background: #092c3e;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
 }
