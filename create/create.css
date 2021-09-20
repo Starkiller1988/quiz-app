@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-clr:white;
+        --main-clr: lightsalmon;
+        --bg-clr: black;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1{
+    border-style: solid;
+    font-size: 45px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--main-clr);
+    color:var(--text-clr);
+    height: 60px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: zen dots;
+    width: 100vw;
+    
+}
+
+
+
+.title{
+    font-family: zen dots;
+}
+
+textarea{
+resize: none;
+display: flex;
+margin-block: 20px;
+font-family: zen dots;
+border-style: solid;
+border-color: var(--text-clr);
+border-width: 10px;
+border-style:none
+}
+
+.hans{
+    font-family: zen dots;
+    display: flex;
+    margin-block: 20px;
+}
+
+.franz{
+font-family: zen dots;
+}
+
+.kranz{
+font-family: zen dots;
+}
+
+.sub{
+    font-family: zen dots;
+}
+
+.res{
+    font-family: zen dots;
+}
+
+footer{
+    background-color: var(--main-clr);
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    position: ;
+    bottom: 0;
+    width: 100vw;
+    }
+
+    #homebtn, #bookbtn, #questbtn, #profbtn{
+        margin-inline: 10px;
+        border-radius: 10px;
+    }
+
+    .home, .bookmark, .addquestion, .profile{
+        width: 60px;
+    }

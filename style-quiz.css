@@ -5,13 +5,13 @@
     --bg-clr: white;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text-clr:white;
-        --main-clr: lightsalmon;
-        --bg-clr: black;
-    }
+*{
+    margin: 0;
+    padding: 0;
 }
+
+
+
 
 h1{
     border-style: solid;
