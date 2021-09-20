@@ -1,141 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
-:root{
-    --text-clr:black;
-    --main-clr: lightsalmon;
-    --bg-clr: white;
-}
-
-*{
-    margin: 0;
+* {
     padding: 0;
-}
-
-
-
-
-h1{
-    border-style: solid;
-    font-size: 45px;
-    border-radius: 10px;
-    text-align: center;
-    background-color: var(--main-clr);
-    color:var(--text-clr);
-    height: 60px;
-    padding-top: 10px;
-    font-weight: bold;
-    font-family: zen dots;
-    
-}
-footer{
-background-color: var(--main-clr);
-border-radius: 10px;
-text-align: center;
-padding-bottom: 10px;
-position: fixed;
-bottom: 0;
-width: 100vw;
-}
-
-.home, .bookmark, .addquestion, .profile{
-    width: 60px;
-}
-
-
-#homebtn, #bookbtn, #questbtn, #profbtn{
-    margin-inline: 10px;
-    border-radius: 10px;
-}
-
-.questcard-container{
-    padding: 0 20px
-}
-
-.questcard{
-    border: 2px solid var(--text-clr);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    font-size: 21px;
-background-color: var(--main-clr);
-text-align: center;
-font-family: zen dots;
-color: var(--text-clr);
-}
-
-.questcard button{
-    background-color:var(--main-clr-);
-    font-size: 25px;
-    flex: 0 0 4rem;
-    margin: 2% 10%;
-    font-family: zen dots;
-    color: var(--main-clr-);
+    margin: 0;
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    background-color:var(--bg-clr);
-
+    background-color: grey;
 }
+
 
 header{
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    z-index: 1;
+display: flex;
+color: lightgreen;
+background-color: black;
+border-style: solid;
+justify-content: center;
+font-size: 30px;
 }
 
-main{
-    margin: 100px 0;
+.question-container{
+    margin-top: 50px;
+    position: relative;
+}
+
+.questcard{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-style: solid;
+    background-color: black;
+    color: lightgreen;
+    margin: 15px;
+    height: 400px;
+    gap: 50px;
+    padding: 10px;
+}
+
+.answer{
+    background-color: gray;
+    color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 40px;
+    width: 300px;
+    padding: 5px;
+}
+
+.tags{
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .bookm {
     position: absolute;
-    margin-top: 16px;
+    top: -5px;
+    left: 0;
 }
 
 .bbtn{
     width: 50px;
+    background-color: lightgreen;
+    border-style: solid;
+    border-color: white;
 }
 
-input[type="checkbox"] {
--webkit-appearance: none;
-visibility: hidden;
-display: none;
-}
-
-.check{
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 20px;
-    background: #092c3e;
-    cursor: pointer;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: ease-in 0.5s;
-}
-
-.tags{
-    display: none;
-}
-
-#tag1{
-font-size: 15px;
-}
-
-#tag2{
-    font-size: 15px;
-}
-
-#tag3{
-    font-size: 15px;
-}
-
-#tag4{
-    font-size: 15px;
+.bbm-bounce {
+    animation: bounce 2s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes bounce{
@@ -150,24 +83,33 @@ font-size: 15px;
     }
 }
 
-.bbm-bounce {
-    animation: bounce 2s;
-    animation-iteration-count: infinite;
+
+footer{
+    background-color: black;
+    border-style: solid;
+    border-color: lightgreen;
+    position: fixed;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+
+.home, .bookmark, .addquestion, .profile{
+    width: 45px;
 }
 
-@keyframes change-background-color-footer{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    100%{
-        transform: scale(1);
-    }
+#homebtn, #bookbtn, #questbtn, #profbtn{
+    border-radius: 1px;
 }
 
-.change-background-color{
-    
+.page{
+display: none;
+}
 
+.page.current{
+    display: block;
 }
