@@ -114,3 +114,7 @@ display: none;
 .page.current{
     display: block;
 }
+
+section{
+    margin: 10rem auto;
+}

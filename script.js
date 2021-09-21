@@ -1,37 +1,37 @@
-const linkhaupt = document.querySelector(".link-haupt");
-const linkspeichern = document.querySelector(".link-speichern");
-const linkeinfügen = document.querySelector(".link-einfügen");
-const linkprofil = document.querySelector(".link-profil");
+const linkmain = document.querySelector(".link-main");
+const linksave = document.querySelector(".link-save");
+const linkadd = document.querySelector(".link-add");
+const linkprofile = document.querySelector(".link-profile");
 
 const pagehome = document.querySelector("#home");
-const pagebookmarked = document.querySelector("#bookmark");
-const pagecreate = document.querySelector("#create");
-const pageprofile = document.querySelector("#profile");
+const pagebookmarked = document.querySelector("#bookmark-page");
+const pagecreate = document.querySelector("#create-page");
+const pageprofile = document.querySelector("#profile-page");
 
-linkhaupt.addEventListener("click", () => {
+linkmain.addEventListener("click", () => {
     pagehome.classList.add("current");
     pagebookmarked.classList.remove("current");
     pagecreate.classList.remove("current");
     pageprofile.classList.remove("current");
 });
 
-linkspeichern.addEventListener("click", () => {
+linksave.addEventListener("click", () => {
     pagehome.classList.remove("current");
     pagebookmarked.classList.add("current");
     pagecreate.classList.remove("current");
     pageprofile.classList.remove("current");
 });
 
-linkeinfügen.addEventListener("click", () => {
+linkadd.addEventListener("click", () => {
     pagehome.classList.remove("current");
     pagebookmarked.classList.remove("current");
     pagecreate.classList.add("current");
     pageprofile.classList.remove("current");
 });
 
-linkprofil.addEventListener("click", () => {
+linkprofile.addEventListener("click", () => {
     pagehome.classList.remove("current");
     pagebookmarked.classList.remove("current");
     pagecreate.classList.remove("current");
     pageprofile.classList.add("current");
-})
+});
