@@ -20,3 +20,11 @@ const button = document.querySelector(".bbm-bounce")
 button.addEventListener("click", () => {
 button.classList.toggle("bookmarkchange");
 });
+
+const answer = document.querySelector(".revealanswer");
+
+const showMeAnswer = document.querySelector(".answer");
+
+showMeAnswer.addEventListener("click", () => {
+answer.classList.toggle("displayanswer");   
+});

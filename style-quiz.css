@@ -122,3 +122,12 @@ section{
 .bookmarkchange{
     background-color: lightpink;
 }
+
+.revealanswer{
+    display: none;
+    border-style: solid;
+}
+
+.displayanswer{
+    display: block;
+}
