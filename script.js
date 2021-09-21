@@ -10,30 +10,14 @@ const pageprofile = document.querySelector("#profile-page");
 
 const pages = document.querySelectorAll(".page")
 
-linkmain.addEventListener("click", () => {
-    pages.forEach((page) => {
-    page.classList.remove("current");
-    });
-    pagehome.classList.add("current");
-});
+const links = document.querySelectorAll("footer a")
 
-linksave.addEventListener("click", () => {
-    pages.forEach((page) => {
+links.forEach(link) => {
+    link.addEventListener("click", () => {
+        pages.forEach((page) => {
         page.classList.remove("current");
-        });
-    pagebookmarked.classList.add("current"); 
-});
 
-linkadd.addEventListener("click", () => {
-    pages.forEach((page) => {
-        page.classList.remove("current");
-        });
-    pagecreate.classList.add("current");
-});
+const hrefAttribute = links.getAttribute("href");
+hrefAttribute.classList.add("current");
 
-linkprofile.addEventListener("click", () => {
-    pages.forEach((page) => {
-        page.classList.remove("current");
         });
-    pageprofile.classList.add("current");
-});
