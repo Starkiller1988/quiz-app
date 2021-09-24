@@ -58,19 +58,22 @@ font-size: 30px;
     position: absolute;
     top: -5px;
     left: 0;
+    background-color:white;
+    animation: bounce 2s;
+    animation-iteration-count: infinite;
+    background-image: url(/image/bookmark_black_24dp.svg);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+
 }
 
 .bbtn{
     width: 50px;
-    background-color: lightgreen;
     border-style: solid;
     border-color: white;
 }
 
-.bbm-bounce {
-    animation: bounce 2s;
-    animation-iteration-count: infinite;
-}
 
 @keyframes bounce{
     0%{
@@ -120,7 +123,7 @@ section{
 }
 
 .bookmarkchange{
-    background-color: lightpink;
+    background-color: green;
 }
 
 .revealanswer{
@@ -137,4 +140,17 @@ form{
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+
+.questionadd{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h4{
+    border-style: solid;
+    width: 50%;
+    text-align: center;
+    height: 50%;
 }
