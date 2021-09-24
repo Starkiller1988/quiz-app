@@ -78,8 +78,6 @@ const createQuestionsHtml = (questions) => {
           <div class="bookm"></div>
 
 
-    </div>
-
     `;
   });
   //console.log(html);
@@ -90,10 +88,10 @@ const renderQuestions = () => {
   const questionsHtml = createQuestionsHtml(array);
   const questionsContainer = document.querySelector("#home");
   questionsContainer.innerHTML = questionsHtml;
-  const img = document.querySelector(".bookm");
-  console.log(img);
-  img.addEventListener("click", () => {
-    img.classList.toggle("bookmarkchange");
+  const img = document.querySelector('.bookm');
+  
+  img.addEventListener('click', () => {
+    img.classList.toggle('bookmarkchange');
   });
 
   const answer = document.querySelector(".revealanswer");
