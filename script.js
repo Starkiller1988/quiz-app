@@ -36,7 +36,7 @@ form.addEventListener("submit", (event) => {
 
 const array = [
   { question: "Are you sure?", answer: "No!", tags: "One" },
-  { question: "Are you really sure?", answer: "No!", tags: "Two" }
+  { question: "Are you really sure?", answer: "No!", tags: "Two" },
 ];
 
 const createQuestionsHtml = (questions) => {
@@ -52,32 +52,30 @@ const createQuestionsHtml = (questions) => {
 
         <p class="question">Question: ${question.question}</p>
 
-<!------------Answer to Question-->
-<div class="revealanswer">
-<p >Answer: ${question.answer}</p>
-</div>
+          <!------------Answer to Question-->
+          <div class="revealanswer">
+          <p >Answer: ${question.answer}</p>
+          </div>
 
-<!--------Show Answer Button-->
-<button class="answer">
-    Show Answer
-</button>
+          <!--------Show Answer Button-->
+          <button class="answer">
+              Show Answer
+          </button>
 
-<!---------Tags-->
+          <!---------Tags-->
 
-<div class="tags">
+          <div class="tags">
             <p id="tag1">Tag: ${question.tags}</p>
             <p id="tag2">Tag: ${question.tags}</p>
             <p id="tag3">Tag: ${question.tags}</p>
             <p id="tag4">Tag: ${question.tags}</p>
           </div>
-
-
-<!---------bookmark bouncing-->
-
+          
+          <!--bookmark bouncing-->
 
           <div class="bookm"></div>
 
-
+</div>
     `;
   });
   //console.log(html);
@@ -88,10 +86,10 @@ const renderQuestions = () => {
   const questionsHtml = createQuestionsHtml(array);
   const questionsContainer = document.querySelector("#home");
   questionsContainer.innerHTML = questionsHtml;
-  const img = document.querySelector('.bookm');
-  
-  img.addEventListener('click', () => {
-    img.classList.toggle('bookmarkchange');
+  const img = document.querySelector(".bookm");
+
+  img.addEventListener("click", () => {
+    img.classList.toggle("bookmarkchange");
   });
 
   const answer = document.querySelector(".revealanswer");

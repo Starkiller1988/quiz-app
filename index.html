@@ -1,141 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style-quiz.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="style-quiz.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header><h1>Quiz App</h1></header>
 
-  <header><h1>Quiz App</h1></header>
+    <main>
+      <!--Question Card-->
+      <section class="question-container current page" id="home">
+        <section class="questcard">
+          <h2>Question</h2>
 
-<main>
-    <!--Question Card-->
-<section class="question-container current page" id="home">
-    <section class="questcard">
-        
-        <h2>Question</h2>
+          <p class="question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, natus
+            delectus? Tempore eaque exercitationem velit odit possimus, debitis
+            fugit similique, quaerat voluptate, quia in quam omnis quo nihil.
+            Eveniet, culpa?
+          </p>
 
-        <p class="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, natus delectus? Tempore eaque exercitationem velit odit possimus, debitis fugit similique, quaerat voluptate, quia in quam omnis quo nihil. Eveniet, culpa?</p>
+          <!--Answer to Question-->
+          <div class="revealanswer">
+            <h3>Answer</h3>
+          </div>
 
-<!--Answer to Question-->
-<div class="revealanswer">
-  <h3>Answer</h3>
-</div>
+          <!--how Answer Button-->
+          <button class="answer">Show Answer</button>
 
-<!--how Answer Button-->
-<button class="answer">
-    Show Answer
-</button>
+          <!--Tags-->
 
-<!--Tags-->
-
-<div class="tags">
+          <div class="tags">
             <p id="tag1">#tag1</p>
             <p id="tag2">#tag2</p>
             <p id="tag3">#tag3</p>
             <p id="tag4">#tag4</p>
-</div>
+          </div>
 
-
-<!--bookmark bouncing-->
-
+          <!--bookmark bouncing-->
 
           <div class="bookm"></div>
+        </section>
+      </section>
 
-</section>
-</section>
+      <!--Bookmark page-->
 
-<!--Bookmark page-->
+      <section class="page" id="bookmark-page">
+        <p>Speichere mich.</p>
+      </section>
 
+      <!--Create a Question page-->
 
+      <section class="page" id="create-page">
+        <form>
+          <div>
+            <label for="new-question">New Question:</label><br />
+            <input
+              type="text"
+              id="new-question"
+              name="new-question"
+              value="question"
+            /><br />
+          </div>
+          <div>
+            <label for="new-answer">New Answer:</label><br />
+            <input
+              type="text"
+              id="new-answer"
+              name="new-answer"
+              value="answer"
+            /><br /><br />
+          </div>
+          <div>
+            <label for="new-tags">Tags:</label><br />
+            <input
+              type="text"
+              id="new-tags"
+              name="new-tags"
+              value="tags"
+            /><br /><br />
+          </div>
+          <div>
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </section>
 
- 
-    <section class="page" id="bookmark-page">
-    <p>Speichere mich.</p>
-  </section>  
+      <!--Profile Page-->
 
+      <section class="page" id="profile-page">
+        <p>Erschaffe dich.</p>
+      </section>
+    </main>
 
+    <!--Navigation-->
 
-
-<!--Create a Question page-->
-
-
-<section class="page" id="create-page">
-
-  <form>
-    <div>
-      <label for="new-question">New Question:</label><br />
-      <input
-        type="text"
-        id="new-question"
-        name="new-question"
-        value="question"
-      /><br />
-    </div>
-    <div>
-      <label for="new-answer">New Answer:</label><br />
-      <input
-        type="text"
-        id="new-answer"
-        name="new-answer"
-        value="answer"
-      /><br /><br />
-    </div>
-    <div>
-      <label for="new-tags">Tags:</label><br />
-      <input
-        type="text"
-        id="new-tags"
-        name="new-tags"
-        value="tags"
-      /><br /><br />
-    </div>
-    <div>
-      <input type="submit" value="Submit" />
-    </div>
-  </form>
-
-</section>
-
-<!--Profile Page-->
-
-<section class="page" id="profile-page">
-
- 
-    <p>Erschaffe dich.</p>
-   
-
-</section>
-</main>
-
-<!--Navigation-->
-
-<footer>
-
-     <a class="link-main" href="#home" id="homebtn">
-      <img src="image/home.png" alt="home" class="home" />
-    </a>
-   
-    <a class="link-save" href="#bookmark-page" id="bookbtn">
-      <img src="image/bookmark.png" alt="bookmark" class="bookmark" />
-    </a>
-   
-     <a class="link-add" href="#create-page" id="questbtn">
-      <img src="image/newquestion.png" alt="addquestion" class="addquestion" />
+    <footer>
+      <a class="link-main" href="#home" id="homebtn">
+        <img src="image/home.png" alt="home" class="home" />
       </a>
-   
-       <a class="link-profile" href="#profile-page" id="profbtn">
-      <img src="image/profile.png" alt="profile" class="profile" />
-    </a>
-  
-  </footer>
 
-<script src="script.js"></script>
+      <a class="link-save" href="#bookmark-page" id="bookbtn">
+        <img src="image/bookmark.png" alt="bookmark" class="bookmark" />
+      </a>
 
+      <a class="link-add" href="#create-page" id="questbtn">
+        <img
+          src="image/newquestion.png"
+          alt="addquestion"
+          class="addquestion"
+        />
+      </a>
 
-</body>
+      <a class="link-profile" href="#profile-page" id="profbtn">
+        <img src="image/profile.png" alt="profile" class="profile" />
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
