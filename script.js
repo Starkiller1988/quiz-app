@@ -35,8 +35,8 @@ form.addEventListener("submit", (event) => {
 });
 
 const array = [
-  { question: "Are you sure?", answer: "No!", tags: "One Two Three" },
-  { question: "Are you really sure?", answer: "No!", tags: "One Two Three" },
+  { question: "Are you sure?", answer: "No!", tags: "One" },
+  { question: "Are you really sure?", answer: "No!", tags: "Two" }
 ];
 
 const createQuestionsHtml = (questions) => {
@@ -59,16 +59,16 @@ const createQuestionsHtml = (questions) => {
 
 <!--------Show Answer Button-->
 <button class="answer">
-    <h2>Show Answer</h2>
+    Show Answer
 </button>
 
 <!---------Tags-->
 
 <div class="tags">
-            <button><p id="tag1">Tag: ${question.tags}</p></button>
-            <button><p id="tag2">Tag: ${question.tags}</p></button>
-            <button><p id="tag3">Tag: ${question.tags}</p></button>
-            <button><p id="tag4">Tag: ${question.tags}</p></button>
+            <p id="tag1">Tag: ${question.tags}</p>
+            <p id="tag2">Tag: ${question.tags}</p>
+            <p id="tag3">Tag: ${question.tags}</p>
+            <p id="tag4">Tag: ${question.tags}</p>
           </div>
 
 
